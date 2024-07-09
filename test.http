@@ -1,0 +1,26 @@
+GET http://localhost:3000/tasks
+
+###
+POST http://localhost:3000/task
+Content-Type: application/json
+
+{
+    "title": "koTask Api",
+    "body": "Create an Api and document on postman",
+    "status": "not submitted"
+}
+
+
+###
+PUT http://localhost:3000/task/e5ba03c3-cb40-49ae-863a-d471e4885ab0
+Content-Type: application/json
+
+{
+    "title": "Task Api updated",
+    "body": "dont do anything", 
+    "status": "graded"
+}
+
+
+###
+DELETE http://localhost:3000/task/e5ba03c3-cb40-49ae-863a-d471e4885ab0
